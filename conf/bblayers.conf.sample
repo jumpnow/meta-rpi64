@@ -1,0 +1,21 @@
+# POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+POKY_BBLAYERS_CONF_VERSION = "2"
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+    ${HOME}/poky-zeus/meta \
+    ${HOME}/poky-zeus/meta-poky \
+    ${HOME}/poky-zeus/meta-openembedded/meta-oe \
+    ${HOME}/poky-zeus/meta-openembedded/meta-multimedia \
+    ${HOME}/poky-zeus/meta-openembedded/meta-networking \
+    ${HOME}/poky-zeus/meta-openembedded/meta-perl \
+    ${HOME}/poky-zeus/meta-openembedded/meta-python \
+    ${HOME}/poky-zeus/meta-qt5 \
+    ${HOME}/poky-zeus/meta-raspberrypi \
+    ${HOME}/poky-zeus/meta-security \
+    ${HOME}/poky-zeus/meta-jumpnow \
+    ${HOME}/rpi64/meta-rpi64 \
+"
