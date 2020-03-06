@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -z "${DSTDIR}" ]; then
-    DSTDIR=~/rpi/upload
+    DSTDIR=~/rpi64/upload
 fi
 
 if [ ! -d ${DSTDIR} ]; then
