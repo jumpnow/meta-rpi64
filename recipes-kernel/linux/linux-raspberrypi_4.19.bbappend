@@ -1,8 +1,8 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
-LINUX_VERSION = "4.19.106"
+LINUX_VERSION = "4.19.108"
 
-SRCREV = "ecb440abef61d198478b6e598b3510ff6680090a"
+SRCREV = "2fab54c74bf956951e61c6d4fe473995e8d07010"
 
 SRC_URI += "file://ikconfig.cfg"
 
@@ -12,9 +12,6 @@ KERNEL_DEVICETREE = " \
 "
 
 RPI_KERNEL_DEVICETREE = " \
-    broadcom/bcm2710-rpi-cm3.dtb \
-    broadcom/bcm2710-rpi-3-b.dtb \
-    broadcom/bcm2710-rpi-3-b-plus.dtb \
     broadcom/bcm2711-rpi-4-b.dtb \
 "
 

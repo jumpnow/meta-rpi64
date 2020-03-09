@@ -18,11 +18,6 @@ fi
 echo "MACHINE: ${MACHINE}"
 
 case "${MACHINE}" in
-    raspberrypi3-64)
-        DTBS="bcm2710-rpi-3-b.dtb \
-              bcm2710-rpi-3-b-plus.dtb"
-        ;;
-
     raspberrypi4-64)
         DTBS="bcm2711-rpi-4-b.dtb"
         ;;

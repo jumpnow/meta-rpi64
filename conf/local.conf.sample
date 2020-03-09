@@ -1,8 +1,8 @@
-# Local configuration for meta-rpi64 images
+# Local configuration for meta-rpi images
 # Yocto Project 3.0 Poky distribution [zeus] branch
 # This is a sysvinit system
 
-# Use local version
+# Use local version of wireguard
 BBMASK = "meta-networking/recipes-kernel/wireguard"
 
 LICENSE_FLAGS_WHITELIST = "commercial"
@@ -25,14 +25,15 @@ MACHINE = "raspberrypi4-64"
 
 KERNEL_IMAGETYPE = "Image"
 
+DISABLE_OVERSCAN = "1"
 ENABLE_UART = "1"
-SERIAL_CONSOLES = "115200;ttyAMA0"
+SERIAL_CONSOLES = "115200;ttyS0"
 
 PREFERRED_VERSION_linux-raspberrypi = "4.19.%"
 
-#DL_DIR = "${HOME}/oe-sources"
-#SSTATE_DIR = "/oe6/rpi64/sstate-cache"
-#TMPDIR = "/oe6/rpi64/tmp-zeus"
+# DL_DIR = "${HOME}/oe-sources"
+# SSTATE_DIR = "/oe6/rpi64/sstate-cache"
+# TMPDIR = "/oe6/rpi64/tmp-zeus"
 
 DISTRO = "poky"
 PACKAGE_CLASSES = "package_ipk"
