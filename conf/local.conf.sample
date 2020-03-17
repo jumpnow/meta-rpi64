@@ -31,9 +31,9 @@ SERIAL_CONSOLES = "115200;ttyS0"
 
 PREFERRED_VERSION_linux-raspberrypi = "4.19.%"
 
-# DL_DIR = "${HOME}/oe-sources"
-# SSTATE_DIR = "/oe6/rpi64/sstate-cache"
-# TMPDIR = "/oe6/rpi64/tmp-zeus"
+# DL_DIR = "/src/oe"
+# SSTATE_DIR = "/oe8/rpi64/sstate-cache"
+# TMPDIR = "/oe8/rpi64/tmp-zeus"
 
 DISTRO = "poky"
 PACKAGE_CLASSES = "package_ipk"
