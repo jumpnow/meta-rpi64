@@ -58,7 +58,7 @@ else
 fi
 
 if [ "x${3}" = "x" ]; then
-    TARGET_HOSTNAME=$MACHINE
+    TARGET_HOSTNAME=rpi4
 else
     TARGET_HOSTNAME=${3}
 fi
