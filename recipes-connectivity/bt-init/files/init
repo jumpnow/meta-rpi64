@@ -1,0 +1,33 @@
+#!/bin/sh
+
+START_BT=no
+BT_ATTACH_ARGS="/dev/ttyAMA0 bcm43xx 3000000 flow -"
+
+[ -c /dev/ttyAMA0 ] || exit 0
+
+[ -x /usr/bin/hciattach ] || exit 0
+
+# can override START_BT and BT_ARGS
+[ -r /etc/default/bt-init ] && . /etc/default/bt-init
+
+case ${START_BT} in
+    [Nn]*)
+	exit 0
+	;;
+esac
+
+case "$1" in
+    start)
+	echo "Attaching bluetooth"
+	/usr/bin/hciattach ${BT_ATTACH_ARGS}
+
+	echo "Starting bluetoothd"
+	/usr/libexec/bluetooth/bluetoothd &
+        ;;
+
+    *)
+        echo "Usage: /etc/init.d/bt-init {start}"
+        exit 2
+	;;
+esac
+
