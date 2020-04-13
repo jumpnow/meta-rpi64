@@ -8,7 +8,7 @@ if [ -z "${MACHINE}" ]; then
 
     if [ -z "${MACHINE}" ]; then
         echo "Environment variable MACHINE not set"
-        echo "Example: export MACHINE=raspberrypi4"
+        echo "Example: export MACHINE=raspberrypi4-64"
         exit 1
     fi
 fi
