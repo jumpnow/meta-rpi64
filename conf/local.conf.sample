@@ -31,12 +31,12 @@ MACHINE = "raspberrypi4-64"
 
 KERNEL_IMAGETYPE = "Image"
 
-# uncomment for kernels < 5.6
+# needed for kernels < 5.6
 WIREGUARD_COMPAT = "1"
 
 DISABLE_OVERSCAN = "1"
 # ENABLE_UART = "1"
-# SERIAL_CONSOLES = "115200;ttyS0"
+SERIAL_CONSOLES = ""
 
 PREFERRED_VERSION_linux-raspberrypi = "4.19.%"
 
