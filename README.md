@@ -28,6 +28,6 @@ Latest commits
     meta-qt5 852e279
     meta-raspberrypi 0e05098
     meta-security ecd8c30
-    meta-jumpnow f04724d
+    meta-jumpnow 92757a6
 
 meta-rpi64 layer maintainer: Scott Ellis <scott@jumpnowtek.com>

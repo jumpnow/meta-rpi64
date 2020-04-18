@@ -19,6 +19,8 @@ RPI_STUFF = " \
 IMAGE_INSTALL += " \
     ${RPI_STUFF} \
     ${WIFI} \
+    ${SECURITY_TOOLS} \
+    ${WIREGUARD} \
 "
 
 export IMAGE_BASENAME = "console-image"
