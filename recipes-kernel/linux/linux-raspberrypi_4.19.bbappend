@@ -1,4 +1,4 @@
-FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
+FILESEXTRAPATHS_prepend := "${THISDIR}/linux-raspberrypi-4.19:"
 
 LINUX_VERSION = "4.19.115"
 
