@@ -31,14 +31,18 @@ MACHINE = "raspberrypi4-64"
 
 KERNEL_IMAGETYPE = "Image"
 
-# needed for kernels < 5.6
+# uncomment for kernels < 5.6
 WIREGUARD_COMPAT = "1"
 
 DISABLE_OVERSCAN = "1"
 # ENABLE_UART = "1"
 SERIAL_CONSOLES = ""
 
+# default to 4.19 same as Raspbian
 PREFERRED_VERSION_linux-raspberrypi = "4.19.%"
+
+# can use this kernel if don't care about Qt eglfs (Qt linuxfb works)
+#PREFERRED_VERSION_linux-raspberrypi = "5.4.%"
 
 # DL_DIR = "/src/oe"
 # SSTATE_DIR = "/oe8/rpi64/sstate-cache"
