@@ -1,7 +1,7 @@
 #!/bin/sh
 
 START_BT=no
-BT_ATTACH_ARGS="/dev/ttyAMA0 bcm43xx 3000000 flow -"
+BT_ATTACH_ARGS="/dev/ttyAMA0 bcm43xx 3000000 flow"
 
 [ -c /dev/ttyAMA0 ] || exit 0
 
@@ -20,6 +20,9 @@ case "$1" in
     start)
 	echo "Attaching bluetooth"
 	/usr/bin/hciattach ${BT_ATTACH_ARGS}
+
+        echo "Bringing hci0 up"
+        /usr/bin/hciconfig hci0 up
 
 	echo "Starting bluetoothd"
 	/usr/libexec/bluetooth/bluetoothd &
