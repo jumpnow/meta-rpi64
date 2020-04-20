@@ -10,7 +10,7 @@ PV = "5.4.32"
 SRCREV = "a142142bdf77a83cdae20a1f32873cbd34558efb"
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=rpi-${LINUX_VERSION}.y \
-    file://defconfig \
+    file://ikconfig.cfg \
 "
 
 KERNEL_EXTRA_ARGS_append_rpi = " DTC_FLAGS='-@ -H epapr'"
