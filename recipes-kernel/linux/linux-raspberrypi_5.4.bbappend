@@ -1,19 +1,10 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/linux-raspberrypi-5.4:"
 
-require linux-rpi.inc
+LINUX_VERSION = "5.4.38"
 
-LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
+SRCREV = "4f10063ffdc292908e3d40e844cc37902e9e65de"
 
-LINUX_VERSION = "5.4"
-
-PV = "5.4.32"
-SRCREV = "68fd7d52c9fc7c40b996d6b91acaf3e03b2c3ea0"
-SRC_URI = "\
-    git://github.com/raspberrypi/linux.git;branch=rpi-${LINUX_VERSION}.y \
-    file://ikconfig.cfg \
-"
-
-KERNEL_EXTRA_ARGS_append_rpi = " DTC_FLAGS='-@ -H epapr'"
+SRC_URI += "file://ikconfig.cfg"
 
 KERNEL_DEVICETREE = " \
     ${RPI_KERNEL_DEVICETREE} \
@@ -86,6 +77,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/hifiberry-dacplus.dtbo \
     overlays/hifiberry-digi.dtbo \
     overlays/hifiberry-digi-pro.dtbo \
+    overlays/highperi.dtbo \
     overlays/hy28a.dtbo \
     overlays/hy28b-2017.dtbo \
     overlays/hy28b.dtbo \

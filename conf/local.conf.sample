@@ -1,5 +1,5 @@
 # Local configuration for meta-rpi images
-# Yocto Project 3.0 Poky distribution [zeus] branch
+# Yocto Project 3.1 Poky distribution [dunfell] branch
 # This is a sysvinit system
 
 # mask wireguard from meta-openembedded/meta-networking
@@ -7,13 +7,9 @@
 # with wireguard-linux-compat
 BBMASK = "meta-networking/recipes-kernel/wireguard"
 
-# mask cryptodev from poky/meta
-# use version from meta-jumpnow to support kernels > 5.4
-BBMASK += "meta/recipes-kernel/cryptodev"
-
 LICENSE_FLAGS_WHITELIST = "commercial"
 
-DISTRO_FEATURES = "ext2 opengl usbhost ${DISTRO_FEATURES_LIBC}"
+DISTRO_FEATURES = "bluetooth ext2 opengl usbhost ${DISTRO_FEATURES_LIBC}"
 
 DISTRO_FEATURES_BACKFILL_CONSIDERED += "pulseaudio"
 
@@ -39,10 +35,8 @@ DISABLE_OVERSCAN = "1"
 SERIAL_CONSOLES = ""
 
 # default to 4.19 same as Raspbian
-PREFERRED_VERSION_linux-raspberrypi = "4.19.%"
-
-# can use this kernel if don't care about Qt eglfs (Qt linuxfb works)
-#PREFERRED_VERSION_linux-raspberrypi = "5.4.%"
+# PREFERRED_VERSION_linux-raspberrypi = "4.19.%"
+PREFERRED_VERSION_linux-raspberrypi = "5.4.%"
 
 # DL_DIR = "/src/oe"
 # SSTATE_DIR = "/oe8/rpi64/sstate-cache"

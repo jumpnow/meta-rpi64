@@ -1,8 +1,8 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/linux-raspberrypi-4.19:"
 
-LINUX_VERSION = "4.19.115"
+LINUX_VERSION = "4.19.120"
 
-SRCREV = "748d8384cef4427e26bada774aa153568acefb21"
+SRCREV = "9da67d7329873623bd5c13fae5835d76d5be8806"
 
 SRC_URI += "file://ikconfig.cfg"
 
