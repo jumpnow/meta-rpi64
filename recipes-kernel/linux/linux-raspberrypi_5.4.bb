@@ -6,8 +6,8 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 
 LINUX_VERSION = "5.4"
 
-PV = "5.4.38"
-SRCREV = "ef04c31043ed31f3dbe6697ba38e026280a852b9"
+PV = "5.4.40"
+SRCREV = "b66e1e760f4c5f7cd783c1ca4c590765274e2cbe"
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=rpi-${LINUX_VERSION}.y \
     file://ikconfig.cfg \
@@ -86,6 +86,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/hifiberry-dacplus.dtbo \
     overlays/hifiberry-digi.dtbo \
     overlays/hifiberry-digi-pro.dtbo \
+    overlays/highperi.dtbo \
     overlays/hy28a.dtbo \
     overlays/hy28b-2017.dtbo \
     overlays/hy28b.dtbo \
