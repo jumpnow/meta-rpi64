@@ -14,6 +14,8 @@ QT5_DEV_PKGS = " \
     qtgraphicaleffects-dev \
     qtlocation-dev \
     qtlocation-mkspecs \
+    qtmultimedia-dev \
+    qtmultimedia-mkspecs \
     qtquickcontrols2-dev \
     qtquickcontrols2-mkspecs \
     qtsensors-dev \
@@ -37,6 +39,7 @@ QT5_PKGS = " \
     qtdeclarative-qmlplugins \
     qtgraphicaleffects \
     qtlocation-plugins \
+    qtmultimedia \
     qtquickcontrols2 \
     qtsensors-plugins \
     qtserialbus \
