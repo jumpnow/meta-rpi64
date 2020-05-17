@@ -1,7 +1,8 @@
 #!/bin/sh
 
-# the other option is linuxfb if just using qt widgets
-export QT_QPA_PLATFORM=eglfs
+# the other option is eglfs but it is currently not working
+# with the 5.4 kernel
+export QT_QPA_PLATFORM=linuxfb
 
 # physical width and height units are mm
 
