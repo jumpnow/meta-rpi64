@@ -34,9 +34,9 @@ DISABLE_OVERSCAN = "1"
 # ENABLE_UART = "1"
 SERIAL_CONSOLES = ""
 
-# default to 4.19 same as Raspbian
-# PREFERRED_VERSION_linux-raspberrypi = "4.19.%"
+# default to 5.4
 PREFERRED_VERSION_linux-raspberrypi = "5.4.%"
+# PREFERRED_VERSION_linux-raspberrypi = "4.19.%"
 
 # DL_DIR = "/src/oe"
 # SSTATE_DIR = "/oe8/rpi64/sstate-cache"
