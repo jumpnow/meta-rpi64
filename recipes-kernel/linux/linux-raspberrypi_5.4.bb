@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 LINUX_VERSION = "5.4.45"
 
 PV = "${LINUX_VERSION}"
-SRCREV = "9bba6267a81e6ab538a586fec2706c151fae3107"
+SRCREV = "d00cdd80abb2a8c201cae2f6bd80e27eb2f7d347"
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=rpi-5.4.y \
     file://ikconfig.cfg \
