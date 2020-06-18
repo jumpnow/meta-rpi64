@@ -4,10 +4,10 @@ require linux-rpi.inc
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 
-LINUX_VERSION = "5.4.45"
+LINUX_VERSION = "5.4.47"
 
 PV = "${LINUX_VERSION}"
-SRCREV = "3b41649ff96de600f3cfd6412ff0a36bf2455123"
+SRCREV = "dec0ddc506ab5d93a7de4b8a7c8dc98e0a96f85c"
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=rpi-5.4.y \
     file://ikconfig.cfg \
