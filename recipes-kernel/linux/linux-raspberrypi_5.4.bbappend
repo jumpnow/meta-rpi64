@@ -20,6 +20,7 @@ RPI_KERNEL_DEVICETREE = " \
 
 RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/act-led.dtbo \
+    overlays/adafruit18.dtbo \
     overlays/adau1977-adc.dtbo \
     overlays/adau7002-simple.dtbo \
     overlays/ads1015.dtbo \
@@ -163,6 +164,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/rpi-tv.dtbo \
     overlays/rpivid-v4l2.dtbo \
     overlays/rra-digidac1-wm8741-audio.dtbo \
+    overlays/sainsmart18.dtbo \
     overlays/sc16is750-i2c.dtbo \
     overlays/sc16is752-i2c.dtbo \
     overlays/sc16is752-spi0.dtbo \
