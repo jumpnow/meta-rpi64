@@ -16,12 +16,17 @@ RPI_STUFF = " \
     userland \
 "
 
+SYSTEMD_STUFF = " \
+    systemd-analyze \
+    systemd-bash-completion \
+    systemd-container \
+"
+
 IMAGE_INSTALL += " \
     firewall \
     ${RPI_STUFF} \
+    ${SYSTEMD_STUFF} \
     ${WIFI} \
-    ${SECURITY_TOOLS} \
-    ${WIREGUARD} \
 "
 
 export IMAGE_BASENAME = "console-image"
