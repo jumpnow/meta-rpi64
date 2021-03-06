@@ -16,5 +16,5 @@ BBLAYERS ?= " \
     ${HOME}/poky-gatesgarth/meta-raspberrypi \
     ${HOME}/poky-gatesgarth/meta-security \
     ${HOME}/poky-gatesgarth/meta-jumpnow \
-    /gg/rpi64/meta-rpi64 \
+    ${HOME}/rpi64/meta-rpi64 \
 "
