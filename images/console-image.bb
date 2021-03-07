@@ -25,6 +25,7 @@ SYSTEMD_STUFF = " \
 IMAGE_INSTALL += " \
     firewall \
     vault \
+    vim \
     ${RPI_STUFF} \
     ${SYSTEMD_STUFF} \
     ${WIFI} \
