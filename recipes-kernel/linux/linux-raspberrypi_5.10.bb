@@ -1,21 +1,16 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/linux-raspberrypi-5.10:"
 
-# require linux-rpi.inc
-
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
 LINUX_VERSION = "5.10.20"
 LINUX_VERSION_EXTENSION = "-jumpnow"
 
 PV = "${LINUX_VERSION}"
-SRCREV = "95b18fac5a849708d553759f2d7bf76449303bf8"
+SRCREV = "c1cfa734c2e07ced2040211d18b4d3d2578dba1e"
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=rpi-5.10.y \
     file://defconfig \
 "
-
-#    file://ikconfig.cfg 
-
 
 require linux-rpi.inc
 
