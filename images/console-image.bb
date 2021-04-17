@@ -3,7 +3,7 @@ HOMEPAGE = "http://www.jumpnowtek.com"
 
 require images/basic-dev-image.bb
 
-DEPENDS += "bootfiles"
+DEPENDS += "rpi-bootfiles"
 
 WIFI = " \
     crda \
@@ -25,7 +25,6 @@ SYSTEMD_STUFF = " \
 IMAGE_INSTALL += " \
     firewall \
     vault \
-    vim \
     ${RPI_STUFF} \
     ${SYSTEMD_STUFF} \
     ${WIFI} \
