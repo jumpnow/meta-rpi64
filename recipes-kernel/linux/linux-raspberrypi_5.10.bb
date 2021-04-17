@@ -2,11 +2,11 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/linux-raspberrypi-5.10:"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
-LINUX_VERSION = "5.10.20"
+LINUX_VERSION = "5.10.27"
 LINUX_VERSION_EXTENSION = "-jumpnow"
 
 PV = "${LINUX_VERSION}"
-SRCREV = "c1cfa734c2e07ced2040211d18b4d3d2578dba1e"
+SRCREV = "1d0cf3ede5d85c8a647dd35306bd5648cd71f9c1"
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=rpi-5.10.y \
     file://defconfig \
@@ -79,6 +79,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/gpio-ir.dtbo \
     overlays/gpio-ir-tx.dtbo \
     overlays/gpio-key.dtbo \
+    overlays/gpio-led.dtbo \
     overlays/gpio-no-bank0-irq.dtbo \
     overlays/gpio-no-irq.dtbo \
     overlays/gpio-poweroff.dtbo \
@@ -143,6 +144,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/merus-amp.dtbo \
     overlays/midi-uart0.dtbo \
     overlays/midi-uart1.dtbo \
+    overlays/minipitft13.dtbo \
     overlays/miniuart-bt.dtbo \
     overlays/mmc.dtbo \
     overlays/mpu6050.dtbo \
@@ -152,6 +154,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/ov9281.dtbo \
     overlays/papirus.dtbo \
     overlays/pca953x.dtbo \
+    overlays/pcie-32bit-dma.dtbo \
     overlays/pibell.dtbo \
     overlays/pifacedigital.dtbo \
     overlays/pifi-40.dtbo \

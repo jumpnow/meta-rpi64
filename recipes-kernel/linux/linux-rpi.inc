@@ -123,11 +123,3 @@ do_compile_append_raspberrypi3-64() {
     cc_extra=$(get_cc_option)
     oe_runmake dtbs CC="${KERNEL_CC} $cc_extra " LD="${KERNEL_LD}" ${KERNEL_EXTRA_ARGS}
 }
-
-do_deploy_append() {
-    # Deploy cmdline.txt only for the main kernel package
-    if [ ${KERNEL_PACKAGE_NAME} = "kernel" ]; then
-        install -d ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}
-        echo "${CMDLINE}" > ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/cmdline.txt
-    fi
-}
