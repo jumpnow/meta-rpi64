@@ -2,11 +2,11 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/linux-raspberrypi-5.10:"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
-LINUX_VERSION = "5.10.27"
+LINUX_VERSION = "5.10.36"
 LINUX_VERSION_EXTENSION = "-jumpnow"
 
 PV = "${LINUX_VERSION}"
-SRCREV = "1d0cf3ede5d85c8a647dd35306bd5648cd71f9c1"
+SRCREV = "b657cd2f27d9171b75c846f21e7b4bb581b3ed29"
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=rpi-5.10.y \
     file://defconfig \
