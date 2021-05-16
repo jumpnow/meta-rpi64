@@ -1,6 +1,3 @@
-## Warning
-Currently only working with raspberrypi4 boards.
-
 This layer depends on:
 
     URI: git://git.yoctoproject.org/poky.git
@@ -20,8 +17,8 @@ This layer depends on:
 
 Latest commits
 
-    poky 08665a81dc
-    meta-openembedded c9815c86b
+    poky 6a751048e5
+    meta-openembedded f3f7a5f1a
     meta-raspberrypi 3ae135e
     meta-security 3daf99f
     meta-jumpnow 3dd7b9a
