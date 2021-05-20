@@ -12,14 +12,4 @@ do_deploy_append() {
     if [ -n "${DISPLAY_ROTATE}" ]; then
         sed -i '/#display_rotate=/ c\display_rotate=${DISPLAY_ROTATE}' ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/config.txt
     fi
-
-    if [ -n "${ENABLE_RPI3_SERIAL_CONSOLE}" ]; then
-        echo "" >> ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/config.txt
-        echo "dtoverlay=pi3-disable-bt" >> ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/config.txt
-    fi
-
-    if [ -n "${BAUDRATE_UART}" ]; then
-        echo "" >> ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/config.txt
-        echo "init_uart_baud=${BAUDRATE_UART}" >> ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/config.txt
-    fi
 }

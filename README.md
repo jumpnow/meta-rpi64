@@ -1,26 +1,22 @@
 This layer depends on:
 
     URI: git://git.yoctoproject.org/poky.git
-    branch: gatesgarth
+    branch: hardknott
 
-    URI: git://git.openembedded.org/meta-openembedded
-    branch: gatesgarth
-
-    URI: git://git.yoctoproject.org/meta-raspberrypi
-    branch: gatesgarth
+    URI: git://git.openembedded.org/meta-openembedded.git
+    branch: hardknott
 
     URI: git://git.yoctoproject.org/meta-security.git
-    branch: gatesgarth
+    branch: hardknott
 
-    URI: https://github.com/jumpnow/meta-jumpnow.git
-    branch: gatesgarth
+    URI: git://git.yoctoproject.org/meta-raspberrypi.git
+    branch: master
 
 Latest commits
 
-    poky 6a751048e5
-    meta-openembedded f3f7a5f1a
-    meta-raspberrypi 3ae135e
-    meta-security 3daf99f
-    meta-jumpnow 3dd7b9a
+    poky 05a8aad57c
+    meta-openembedded bbe3855ec
+    meta-security c6b1eec
+    meta-raspberrypi 11209a4
 
 meta-rpi64 layer maintainer: Scott Ellis <scott@jumpnowtek.com>
