@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
 COMPATIBLE_MACHINE = "^rpi$"
 
-LINUX_VERSION = "5.10.38"
+LINUX_VERSION = "5.10.39"
 LINUX_RPI_BRANCH = "rpi-5.10.y"
 LINUX_VERSION_EXTENSION = "-jumpnow"
 
@@ -21,7 +21,7 @@ KERNEL_DTC_FLAGS += "-@ -H epapr"
 KERNEL_EXTRA_ARGS += "LOADADDR=0x00008000"
 
 PV = "${LINUX_VERSION}"
-SRCREV = "c2f585ae894081445b7f1ab8d0b6334061be9965"
+SRCREV = "a2d265da70816783255d7f450d065c6e1100185c"
 
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=${LINUX_RPI_BRANCH} \
@@ -43,4 +43,5 @@ RPI_KERNEL_DEVICETREE = " \
 "
 
 RPI_KERNEL_DEVICETREE_OVERLAYS = " \
+    overlays/dwc2.dtbo \
 "
