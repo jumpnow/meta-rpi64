@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
 COMPATIBLE_MACHINE = "^rpi$"
 
-LINUX_VERSION = "5.10.44"
+LINUX_VERSION = "5.10.46"
 LINUX_RPI_BRANCH = "rpi-5.10.y"
 LINUX_VERSION_EXTENSION = "-jumpnow"
 
@@ -21,7 +21,7 @@ KERNEL_DTC_FLAGS += "-@ -H epapr"
 KERNEL_EXTRA_ARGS += "LOADADDR=0x00008000"
 
 PV = "${LINUX_VERSION}"
-SRCREV = "0088fda9f99a68e9afb6668adf99d6a6e0e119a3"
+SRCREV = "4afd064509b23882268922824edc5b391a1ea55d"
 
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=${LINUX_RPI_BRANCH} \
