@@ -5,7 +5,7 @@ LINUX_VERSION = "5.10.52"
 SRCREV_machine = ""
 SRCREV_kmeta = ""
 
-SRCREV = "7aa66c086ae01c4f77d54aaeb1d9f62573a7b748"
+SRCREV = "6495fa3396fb387d3871ced42a30281fe7be5352"
 
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=${LINUX_RPI_BRANCH} \
@@ -52,7 +52,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/audremap.dtbo \
     overlays/balena-fin.dtbo \
     overlays/cap1106.dtbo \
-    overlays/chipdip-i2s-master-dac.dtbo \
+    overlays/chipdip-dac.dtbo \
     overlays/cma.dtbo \
     overlays/dht11.dtbo \
     overlays/dionaudio-loco.dtbo \
@@ -241,6 +241,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/upstream.dtbo \
     overlays/upstream-pi4.dtbo \
     overlays/vc4-fkms-v3d.dtbo \
+    overlays/vc4-fkms-v3d-pi4.dtbo \
     overlays/vc4-kms-dpi-at056tn53v1.dtbo \
     overlays/vc4-kms-dsi-7inch.dtbo \
     overlays/vc4-kms-dsi-lt070me05000.dtbo \
