@@ -9,7 +9,7 @@ SRC_URI += "file://firewall.service \
 
 S = "${WORKDIR}"
 
-inherit systemd 
+inherit systemd
 
 SYSTEMD_PACKAGES="${PN}"
 
