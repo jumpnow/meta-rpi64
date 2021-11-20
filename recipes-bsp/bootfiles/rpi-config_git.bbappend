@@ -1,6 +1,6 @@
 SRCREV = "648ffc470824c43eb0d16c485f4c24816b32cd6f"
 
-do_deploy_append() {
+do_deploy:append() {
     sed -i '/#kernel=/ c\kernel=kernel8.img' ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/config.txt
 
     if [ -n "${DISABLE_SPLASH}" ]; then
