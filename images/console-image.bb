@@ -85,6 +85,7 @@ SECURITY = " \
     nikto \
     nmap \
     python3-scapy \
+    wireguard-tools \
 "
 
 SYSTEMD_STUFF = " \
