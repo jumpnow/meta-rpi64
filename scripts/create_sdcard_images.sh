@@ -90,7 +90,7 @@ echo -e "\n***** Creating the loop device *****"
 LOOPDEV=`losetup -f`
 
 echo -e "\n***** Creating an empty SD image file *****"
-dd if=/dev/zero of=${DSTDIR}/${SDIMG} bs=1G count=${CARDSIZE}
+fallocate -l ${CARDSIZE}G ${DSTDIR}/${SDIMG}
 
 echo -e "\n***** Partitioning the SD image file *****"
 sudo fdisk ${DSTDIR}/${SDIMG} <<END
