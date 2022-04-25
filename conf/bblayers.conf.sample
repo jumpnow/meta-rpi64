@@ -6,14 +6,14 @@ BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
-    ${HOME}/poky-honister/meta \
-    ${HOME}/poky-honister/meta-poky \
-    ${HOME}/poky-honister/meta-openembedded/meta-oe \
-    ${HOME}/poky-honister/meta-openembedded/meta-multimedia \
-    ${HOME}/poky-honister/meta-openembedded/meta-networking \
-    ${HOME}/poky-honister/meta-openembedded/meta-perl \
-    ${HOME}/poky-honister/meta-openembedded/meta-python \
-    ${HOME}/poky-honister/meta-raspberrypi \
-    ${HOME}/poky-honister/meta-security \
+    ${HOME}/poky-kirkstone/meta \
+    ${HOME}/poky-kirkstone/meta-poky \
+    ${HOME}/poky-kirkstone/meta-openembedded/meta-oe \
+    ${HOME}/poky-kirkstone/meta-openembedded/meta-multimedia \
+    ${HOME}/poky-kirkstone/meta-openembedded/meta-networking \
+    ${HOME}/poky-kirkstone/meta-openembedded/meta-perl \
+    ${HOME}/poky-kirkstone/meta-openembedded/meta-python \
+    ${HOME}/poky-kirkstone/meta-raspberrypi \
+    ${HOME}/poky-kirkstone/meta-security \
     ${HOME}/rpi64/meta-rpi64 \
 "

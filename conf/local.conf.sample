@@ -1,8 +1,8 @@
 # Local configuration for meta-rpi64 images
-# Yocto Project 3.4 Poky distribution [honister] branch
+# Yocto Project 4.0 Poky distribution [kirkstone] branch
 # This is a systemd system
 
-LICENSE_FLAGS_WHITELIST = "commercial"
+LICENSE_FLAGS_ACCEPTED = "commercial"
 
 DISTRO_FEATURES = "ext2 security systemd usbhost ${DISTRO_FEATURES_LIBC}"
 
@@ -24,11 +24,11 @@ DISABLE_OVERSCAN = "1"
 # ENABLE_UART = "1"
 SERIAL_CONSOLES = "115200;ttyS0"
 
-PREFERRED_VERSION_linux-raspberrypi = "5.10.%"
+# PREFERRED_VERSION_linux-raspberrypi = "5.10.%"
 
-#DL_DIR = "/src/honister"
-#SSTATE_DIR = "/oe5/rpi64/sstate-cache"
-#TMPDIR = "/oe5/rpi64/tmp-honister"
+#DL_DIR = "/oe/dl/kirkstone"
+#SSTATE_DIR = "/oe/rpi64/sstate-cache"
+#TMPDIR = "/oe/rpi64/tmp"
 
 DISTRO = "poky"
 PACKAGE_CLASSES = "package_ipk"
@@ -47,7 +47,6 @@ EXTRA_USERS_PARAMS = "usermod -P jumpnowtek root; "
 INHERIT += "chageusers"
 CHAGE_USERS_PARAMS = "chage -d0 root; "
 
-USER_CLASSES = "image-prelink"
 PATCHRESOLVE = "noop"
 RM_OLD_IMAGE = "1"
 INHERIT += "rm_work"
