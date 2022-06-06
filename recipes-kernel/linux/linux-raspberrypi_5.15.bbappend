@@ -1,11 +1,11 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-LINUX_VERSION = "5.15.34"
+LINUX_VERSION = "5.15.44"
 
 SRCREV_machine = ""
 SRCREV_kmeta = ""
 
-SRCREV = "8fb06e480de36567c6865872309526d047c046eb"
+SRCREV = "f6da43d0aa9dd1d303bb2ae69981efa899a2d799"
 
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=${LINUX_RPI_BRANCH};protocol=https \
@@ -44,6 +44,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/anyspi.dtbo \
     overlays/apds9960.dtbo \
     overlays/applepi-dac.dtbo \
+    overlays/arducam-pivariety.dtbo \
     overlays/at86rf233.dtbo \
     overlays/audioinjector-addons.dtbo \
     overlays/audioinjector-bare-i2s.dtbo \
@@ -79,6 +80,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/goodix.dtbo \
     overlays/googlevoicehat-soundcard.dtbo \
     overlays/gpio-fan.dtbo \
+    overlays/gpio-hog.dtbo \
     overlays/gpio-ir.dtbo \
     overlays/gpio-ir-tx.dtbo \
     overlays/gpio-key.dtbo \
@@ -110,6 +112,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/i2c5.dtbo \
     overlays/i2c6.dtbo \
     overlays/i2c-bcm2708.dtbo \
+    overlays/i2c-fan.dtbo \
     overlays/i2c-gpio.dtbo \
     overlays/i2c-mux.dtbo \
     overlays/i2c-pwm-pca9685a.dtbo \
@@ -121,6 +124,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/imx219.dtbo \
     overlays/imx258.dtbo \
     overlays/imx290.dtbo \
+    overlays/imx296.dtbo \
     overlays/imx378.dtbo \
     overlays/imx477.dtbo \
     overlays/imx519.dtbo \
