@@ -14,9 +14,9 @@ This layer depends on:
 
 Latest commits
 
-    poky a2acea4633
-    meta-openembedded 64156a6f8
-    meta-security 93f2146
+    poky 00c04394cb
+    meta-openembedded 0b7836265
+    meta-security d3d8e62
     meta-raspberrypi 0135a02
 
 meta-rpi layer maintainer: Scott Ellis <scott@jumpnowtek.com>
