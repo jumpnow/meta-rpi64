@@ -7,8 +7,11 @@ SRCREV_kmeta = ""
 
 SRCREV = "113831b7f514f64ba5eb3ba5407b1587b36d9d54"
 
+KMETA = "kernel-meta"
+
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=${LINUX_RPI_BRANCH} \
+    git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-5.4;destsuffix=${KMETA} \
     file://ikconfig.cfg \
 "
 
