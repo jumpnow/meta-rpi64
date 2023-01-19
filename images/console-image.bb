@@ -88,15 +88,9 @@ SECURITY = " \
     wireguard-tools \
 "
 
-SYSTEMD_STUFF = " \
-    systemd-analyze \
-    systemd-bash-completion \
-"
-
 WIFI = "\
     crda \
     iw \
-    linux-firmware-rpidistro-bcm43455 \
     wpa-supplicant \
 "
 
@@ -107,7 +101,6 @@ IMAGE_INSTALL += " \
     ${EXTRA_TOOLS} \
     ${RPI_STUFF} \
     ${SECURITY} \
-    ${SYSTEMD_STUFF} \
     ${WIFI} \
 "
 

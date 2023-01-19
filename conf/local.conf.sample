@@ -1,5 +1,5 @@
 # Local configuration for meta-rpi64 images
-# Yocto Project 4.0 Poky distribution [kirkstone] branch
+# Yocto Project 4.1 Poky distribution [langdale] branch
 # This is a systemd system
 
 LICENSE_FLAGS_ACCEPTED = "commercial"
@@ -24,7 +24,7 @@ DISABLE_OVERSCAN = "1"
 # ENABLE_UART = "1"
 SERIAL_CONSOLES = "115200;ttyS0"
 
-# PREFERRED_VERSION_linux-raspberrypi = "5.10.%"
+# PREFERRED_VERSION_linux-raspberrypi = "5.15.%"
 
 #DL_DIR = "/oe/dl/kirkstone"
 #SSTATE_DIR = "/oe/rpi64/sstate-cache"
@@ -37,15 +37,7 @@ PACKAGE_CLASSES = "package_ipk"
 SDKMACHINE = "x86_64"
 
 # for no root passwd uncomment the following and comment the two extra user lines
-# EXTRA_IMAGE_FEATURES = "debug-tweaks"
-
-# for a root passwd, change jumpnowtek below to your password
-INHERIT += "extrausers"
-EXTRA_USERS_PARAMS = "usermod -P jumpnowtek root; "
-
-# this will force root to change password on first login
-INHERIT += "chageusers"
-CHAGE_USERS_PARAMS = "chage -d0 root; "
+EXTRA_IMAGE_FEATURES = "debug-tweaks"
 
 PATCHRESOLVE = "noop"
 RM_OLD_IMAGE = "1"
