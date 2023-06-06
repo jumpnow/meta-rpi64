@@ -89,7 +89,6 @@ SECURITY = " \
 "
 
 WIFI = "\
-    crda \
     iw \
     wpa-supplicant \
 "

@@ -1,6 +1,5 @@
 # Local configuration for meta-rpi64 images
-# Yocto Project 4.1 Poky distribution [langdale] branch
-# This is a systemd system
+# Yocto Project 4.2 Poky distribution [mickledore] branch
 
 LICENSE_FLAGS_ACCEPTED = "commercial"
 
@@ -26,14 +25,13 @@ SERIAL_CONSOLES = "115200;ttyS0"
 
 # PREFERRED_VERSION_linux-raspberrypi = "5.15.%"
 
-#DL_DIR = "/oe/dl/kirkstone"
-#SSTATE_DIR = "/oe/rpi64/sstate-cache"
-#TMPDIR = "/oe/rpi64/tmp"
+#DL_DIR = "/src/mickledore"
+#SSTATE_DIR = "/oe8/rpi64/sstate-cache"
+#TMPDIR = "/oe8/rpi64/tmp"
 
 DISTRO = "poky"
 PACKAGE_CLASSES = "package_ipk"
 
-# i686 or x86_64
 SDKMACHINE = "x86_64"
 
 # for no root passwd uncomment the following and comment the two extra user lines
