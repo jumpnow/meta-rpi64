@@ -31,12 +31,14 @@ EXTRA_TOOLS = " \
     i2c-tools \
     ifupdown \
     iperf3 \
-    iproute2 \
+    iproute2-ifstat iproute2-ip iproute2-nstat iproute2-ss \
     iptables \
     less \
     lsof \
+    ltrace \
     netcat-openbsd \
     procps \
+    strace \
     sysfsutils \
     tcpdump \
     util-linux \
