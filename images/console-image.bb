@@ -48,10 +48,6 @@ EXTRA_TOOLS = " \
     zip \
 "
 
-RPI_STUFF = " \
-    userland \
-"
-
 SECURITY = " \
     checksec \
     firewall \
@@ -67,7 +63,6 @@ IMAGE_INSTALL += " \
     ${CORE_OS} \
     ${KERNEL_EXTRA} \
     ${EXTRA_TOOLS} \
-    ${RPI_STUFF} \
     ${SECURITY} \
     ${WIFI} \
 "
