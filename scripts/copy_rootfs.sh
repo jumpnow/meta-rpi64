@@ -77,8 +77,8 @@ echo "IMAGE: $IMAGE"
 echo "HOSTNAME: $target_hostname"
 
 
-if [ ! -f "${src}/${IMAGE}-image-${MACHINE}.tar.xz" ]; then
-    echo "File not found: ${src}/${IMAGE}-image-${MACHINE}.tar.xz"
+if [ ! -f "${src}/${IMAGE}-image-${MACHINE}.rootfs.tar.xz" ]; then
+    echo "File not found: ${src}/${IMAGE}-image-${MACHINE}.rootfs.tar.xz"
     exit 1
 fi
 
@@ -114,7 +114,7 @@ if [ "$?" -ne 0 ]; then
 fi
 
 echo "Extracting ${IMAGE}-image-${MACHINE}.tar.xz to /media/card"
-sudo tar --numeric-owner -C "$mnt" -xJf ${src}/${IMAGE}-image-${MACHINE}.tar.xz
+sudo tar --numeric-owner -C "$mnt" -xJf ${src}/${IMAGE}-image-${MACHINE}.rootfs.tar.xz
 
 echo "Generating a random-seed for urandom"
 sudo mkdir -p "${mnt}/var/lib/urandom"
