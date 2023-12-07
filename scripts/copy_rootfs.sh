@@ -113,7 +113,7 @@ if [ "$?" -ne 0 ]; then
     exit 1
 fi
 
-echo "Extracting ${IMAGE}-image-${MACHINE}.tar.xz to /media/card"
+echo "Extracting ${IMAGE}-image-${MACHINE}.rootfs.tar.xz to /media/card"
 sudo tar --numeric-owner -C "$mnt" -xJf ${src}/${IMAGE}-image-${MACHINE}.rootfs.tar.xz
 
 echo "Generating a random-seed for urandom"
