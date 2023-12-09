@@ -4,21 +4,18 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 require console-dev-image.bb
 
-FONTS = " \
-    fontconfig \
-    fontconfig-utils \
-    ttf-bitstream-vera \
-"
-
 GTK_STUFF = " \
     gtk+3-dev \
     gtkmm3-dev \
 "
 
-TSLIB = " \
-    tslib-conf \
-    tslib-calibrate \
-    tslib \
+NET_STUFF = " \
+    mbedtls-dev \
+    mbedtls-programs \
+    nng-dev \
+    nng-tools \
+    protobuf-dev \
+    protobuf-c-dev \
 "
 
 WESTON_STUFF = " \
@@ -27,9 +24,8 @@ WESTON_STUFF = " \
 "
 
 IMAGE_INSTALL += " \
-    ${FONTS} \
     ${GTK_STUFF} \
-    ${TSLIB} \
+    ${NET_STUFF} \
     ${WESTON_STUFF} \
 "
 
