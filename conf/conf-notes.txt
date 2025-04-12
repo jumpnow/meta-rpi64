@@ -8,6 +8,5 @@ Tested targets are:
     basic-image
     console-image
     console-dev-image
-    weston-image
-    weston-dev-image
+    qt6-image
 

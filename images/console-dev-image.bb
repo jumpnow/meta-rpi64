@@ -23,8 +23,6 @@ DEV_SDK = " \
     libstdc++-dev \
     libtool \
     make \
-    meson \
-    ninja \
     pkgconfig \
     python3-modules \
 "

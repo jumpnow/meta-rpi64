@@ -20,16 +20,17 @@ KERNEL_EXTRA = "\
 
 EXTRA_TOOLS = " \
     bzip2 \
-    chrony \
+    coreutils \
     curl \
+    diffutils \
     dosfstools \
     e2fsprogs-mke2fs \
     ethtool \
     fbset \
+    file \
     findutils \
     grep \
     i2c-tools \
-    ifupdown \
     iperf3 \
     iproute2-ifstat iproute2-ip iproute2-nstat iproute2-ss \
     iptables \
@@ -37,9 +38,12 @@ EXTRA_TOOLS = " \
     lsof \
     ltrace \
     netcat-openbsd \
+    parted \
     procps \
     strace \
     sysfsutils \
+    systemd-analyze \
+    tar \
     tcpdump \
     util-linux \
     util-linux-blkid \
