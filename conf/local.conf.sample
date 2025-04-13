@@ -1,5 +1,5 @@
 # Local configuration for meta-rpi64 images
-# Yocto Project 5.1 Poky distribution [styhead] branch
+# Yocto Project 5.2 Poky distribution [walnascar] branch
 
 LICENSE_FLAGS_ACCEPTED = "commercial"
 
@@ -25,9 +25,9 @@ DISABLE_OVERSCAN = "1"
 # ENABLE_UART = "1"
 SERIAL_CONSOLES = "115200;ttyS0"
 
-# PREFERRED_VERSION_linux-raspberrypi = "6.6.%"
+PREFERRED_VERSION_linux-raspberrypi = "6.12.%"
 
-#DL_DIR = "/src/styhead"
+#DL_DIR = "/src/walnascar"
 #SSTATE_DIR = "/oe1/rpi64/sstate-cache"
 #TMPDIR = "/oe1/rpi64/tmp"
 
@@ -36,7 +36,7 @@ PACKAGE_CLASSES = "package_ipk"
 
 SDKMACHINE = "x86_64"
 
-EXTRA_IMAGE_FEATURES = "debug-tweaks"
+EXTRA_IMAGE_FEATURES = "empty-root-password allow-empty-password allow-root-login"
 
 PATCHRESOLVE = "noop"
 RM_OLD_IMAGE = "1"

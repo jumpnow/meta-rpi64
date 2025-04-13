@@ -5,7 +5,6 @@ You can now run 'bitbake <target>'
 
 Tested targets are:
 
-    basic-image
     console-image
     console-dev-image
     qt6-image
