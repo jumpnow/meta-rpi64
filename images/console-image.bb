@@ -54,7 +54,6 @@ EXTRA_TOOLS = " \
 
 SECURITY = " \
     checksec \
-    firewall \
     wireguard-tools \
 "
 

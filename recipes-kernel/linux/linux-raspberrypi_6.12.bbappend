@@ -13,7 +13,6 @@ SRCREV = "b086a4b406654e0ab84c58a76f8ca0b7a3d67b60"
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=${LINUX_RPI_BRANCH};protocol=https \
     file://defconfig \
-    file://ikconfig.cfg \
 "
 
 KERNEL_DEVICETREE = " \
