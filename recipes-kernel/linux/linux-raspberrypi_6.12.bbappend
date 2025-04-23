@@ -1,4 +1,4 @@
-FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/linux-raspberrypi-6.12:"
 
 LINUX_RPI_BRANCH = "rpi-6.12.y"
 LINUX_VERSION = "6.12.22"
@@ -6,10 +6,13 @@ LINUX_VERSION = "6.12.22"
 SRCREV_machine = ""
 SRCREV_kmeta = ""
 
-SRCREV = "aedbd3962a270f72c085e84ad8e41b74c08b395c"
+unset KBUILD_DEFCONFIG
+
+SRCREV = "b086a4b406654e0ab84c58a76f8ca0b7a3d67b60"
 
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=${LINUX_RPI_BRANCH};protocol=https \
+    file://defconfig \
     file://ikconfig.cfg \
 "
 
