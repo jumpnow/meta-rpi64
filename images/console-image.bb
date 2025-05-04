@@ -59,6 +59,13 @@ SECURITY = " \
 
 WIFI = "\
     iw \
+    linux-firmware-rpidistro-bcm43430 \
+    linux-firmware-rpidistro-bcm43436 \
+    linux-firmware-rpidistro-bcm43436s \
+    linux-firmware-rpidistro-bcm43439 \
+    linux-firmware-rpidistro-bcm43455 \
+    linux-firmware-rpidistro-bcm43456 \
+    linux-firmware-rpidistro-license \
     wpa-supplicant \
 "
 
