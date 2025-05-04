@@ -8,7 +8,7 @@ SRCREV_kmeta = ""
 
 unset KBUILD_DEFCONFIG
 
-SRCREV = "f63a47c361c820d628bc08f85d647918d9358dc4"
+SRCREV = "e6d477a23563767b25d36f42b1f41ff109a6e8da"
 
 SRC_URI = "\
     git://github.com/raspberrypi/linux.git;branch=${LINUX_RPI_BRANCH};protocol=https \
@@ -21,6 +21,8 @@ KERNEL_DEVICETREE = " \
 "
 
 RPI_KERNEL_DEVICETREE = " \
+    broadcom/bcm2710-rpi-zero-2.dtb \
+    broadcom/bcm2710-rpi-zero-2-w.dtb \
     broadcom/bcm2711-rpi-400.dtb \
     broadcom/bcm2711-rpi-4-b.dtb \
     broadcom/bcm2711-rpi-cm4.dtb \
