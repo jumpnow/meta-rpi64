@@ -1,9 +1,9 @@
 # Local configuration for meta-rpi64 images
 # Yocto Project 5.2 Poky distribution [walnascar] branch
 
-LICENSE_FLAGS_ACCEPTED = "commercial"
+LICENSE_FLAGS_ACCEPTED = "commercial synaptics-killswitch"
 
-DISTRO_FEATURES = "ext2 opengl security systemd usbhost ${DISTRO_FEATURES_LIBC}"
+DISTRO_FEATURES = "ext2 opengl security systemd usbhost wifi ${DISTRO_FEATURES_LIBC}"
 
 DISTRO_FEATURES_BACKFILL_CONSIDERED += "sysvinit"
 
@@ -18,6 +18,7 @@ MACHINE_FEATURES += "vc4graphics"
 IMAGE_FSTYPES = "tar.xz"
 
 MACHINE = "raspberrypi4-64"
+#MACHINE = "raspberrypi0-2w-64"
 
 KERNEL_IMAGETYPE = "Image"
 
