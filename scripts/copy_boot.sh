@@ -24,6 +24,10 @@ case "${MACHINE}" in
         DTBS="bcm2711-rpi-4-b.dtb"
         ;;
 
+    raspberrypi0-2w-64)
+	DTBS="bcm2710-rpi-zero-2-w.dtb"
+	;;
+
     *)
         echo "Invalid MACHINE: ${MACHINE}"
         exit 1
@@ -215,7 +219,7 @@ fi
 
 if [ -f ./config.txt ]; then
     echo "Copying local config.txt to card"
-    sudo cp ./config.txt "$mnt" 
+    sudo cp ./config.txt "$mnt"
 
     if [ $? -ne 0 ]; then
         echo "Error copying local config.txt to card"
@@ -226,7 +230,7 @@ fi
 
 if [ -f ./cmdline.txt ]; then
     echo "Copying local cmdline.txt to card"
-    sudo cp ./cmdline.txt "$mnt" 
+    sudo cp ./cmdline.txt "$mnt"
 
     if [ $? -ne 0 ]; then
         echo "Error copying local cmdline.txt to card"
