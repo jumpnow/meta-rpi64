@@ -13,7 +13,7 @@ This layer depends on:
     branch: 6.9
 
     URI: https://git.yoctoproject.org/meta-raspberrypi.git
-    branch: master
+    branch: walnascar
 
 Latest commits
 
@@ -21,4 +21,4 @@ Latest commits
     meta-openembedded 0d2d2d193a
     meta-security 784ca4b
     meta-qt6 f80a7f2
-    meta-raspberrypi 3ba4438 
+    meta-raspberrypi 1059a23
