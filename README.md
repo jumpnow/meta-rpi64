@@ -21,4 +21,4 @@ Latest commits
     meta-openembedded 2169c9afcc
     meta-security 784ca4b
     meta-qt6 47a2d07
-    meta-raspberrypi c489c75
+    meta-raspberrypi 1059a23g
